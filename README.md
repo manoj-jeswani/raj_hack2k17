@@ -18,15 +18,12 @@ Crime Statistics and Analytics provide a detailed and informative view of differ
 Most Wanted Person’s Online Directory:
 The person with a criminal record could be dangerous to the society. There is a need for online directory listing of the criminals on the most wanted list of the police which will maintain a list of records of all the criminals with bounty reward.
 
-<b><h3>Demo Link1(Digital ocean - - everything perfectly hosted): <a href="http://139.59.14.110">http://139.59.14.110 </a></h3><b>
-<b><h3>Demo Link2(Hasura - - having database issues): <a href="https://app.byzantine29.hasura-app.io/">https://app.byzantine29.hasura-app.io/</a></h3><b>
+
 
 <b><h3>Video Link: <a href="https://www.youtube.com/watch?v=bN8u2JbtnsU&feature=youtu.be">https://www.youtube.com/watch?v=bN8u2JbtnsU&feature=youtu.be </a></h3><b> 
 <b>
 <hr>
-<!-- <h3>Note for Hasura Hackathon:<h3> We tried to host our project on Hasura Platform but we encountered some problems. One major problem is unable to load the static media files. We contacted you on Slack but still unable to resolve it on time. We are left with no choice but to host our project at another location. Here is the link on which our project is deployed on Hasura - http://app.byzantine29.hasura-app.io/
-<hr>
-</b> -->
+
 
 <b><h2>Tech Stack</h2></b>
 1. Python<br>
@@ -39,3 +36,12 @@ The person with a criminal record could be dangerous to the society. There is a 
 8. Google Maps API<br>
 9. Google Charts API <br>
 10. Other Javascript libraries/ packages<br>
+
+
+<b><h2>Instructions for Execution:</h2></b>
+1. pip3 install -r requirements.txt<br>
+2. Go to src/<br>
+3. ./manage.py collectstatic<br>
+4. ./manage.py makemigrations<br>
+5. ./manage.py migrate<br>
+6. ./manage.py runserver<br>

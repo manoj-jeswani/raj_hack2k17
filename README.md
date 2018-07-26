@@ -39,9 +39,11 @@ The person with a criminal record could be dangerous to the society. There is a 
 
 
 <b><h2>Instructions for Execution:</h2></b>
-1. pip3 install -r requirements.txt<br>
-2. Go to src/<br>
-3. ./manage.py collectstatic<br>
+1. cdc<br>
+2. pip3 install -r requirements.txt<br>
+3. cd src/<br>
 4. ./manage.py makemigrations<br>
 5. ./manage.py migrate<br>
 6. ./manage.py runserver<br>
+
+P.S: Don't forget to set DEBUG = True in  raj_hack2k17/src/raj_hack/settings.py when running locally. 

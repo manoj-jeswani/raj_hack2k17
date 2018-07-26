@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 's0z)!ev#=kq#^vnuj#o-!51k4-+_sf5s$pn_2uy^denot5ld56'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -127,13 +127,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-# STATICFILES_DIRS= [
-#    os.path.join(BASE_DIR, "static")
-# ]
+if DEBUG:
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, "static"),
+    ]
 
-# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
-
-# MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+    STATIC_ROOT = ''
+    MEDIA_ROOT = ''
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
